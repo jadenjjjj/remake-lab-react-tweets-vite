@@ -3,13 +3,14 @@ import React from "react";
 function ProfileImage(prop) {
 
     const { image } = prop;
-    
+
     return (
-        <img src = {image}
+        <img
+        src = {image}
         className = "profile"
-        alt = "alt"
+        alt = "profile"
         />
     )
 }
 
-export default ProfileImage;
+export default ProfileImage
