@@ -1,11 +1,12 @@
-import './App.css';
-import Tweet from './components/Tweet';
+import './App.css'
+import Tweet from './components/Tweet'
+import ProfileImage from './components/ProfileImage'
 
 const tweetsArray = [
   {
     user: {
       name: 'Thoughts of Dog®',
-      image: 'https://res.cloudinary.com/dqqdwbrhs/image/upload/v1676975497/jean-wimmerlin-YxDENE4HgMM-unsplash_1_zeceph.jpg',
+      image: 'https://i.imgur.com/b0EdHVV.jpg',
       handle: 'dog_feelings',
     },
     timestamp: '1h ago',
@@ -15,7 +16,7 @@ const tweetsArray = [
   {
     user: {
       name: 'Thoughts of Dog®',
-      image: 'https://res.cloudinary.com/dqqdwbrhs/image/upload/v1676975497/jean-wimmerlin-YxDENE4HgMM-unsplash_1_zeceph.jpg',
+      image: 'https://i.imgur.com/b0EdHVV.jpg',
       handle: 'dog_feelings',
     },
     timestamp: '2h ago',
@@ -25,7 +26,7 @@ const tweetsArray = [
   {
     user: {
       name: 'Thoughts of Dog®',
-      image: 'https://res.cloudinary.com/dqqdwbrhs/image/upload/v1676975497/jean-wimmerlin-YxDENE4HgMM-unsplash_1_zeceph.jpg',
+      image: 'https://i.imgur.com/b0EdHVV.jpg',
       handle: 'dog_feelings',
     },
     timestamp: '3h ago',
@@ -36,7 +37,7 @@ const tweetsArray = [
 
 function App() {
   return (
-    <div className='App'>
+    <div>
       <Tweet tweet={tweetsArray[0]}/>
     </div>
   )
