@@ -2,6 +2,8 @@ import React from "react";
 import ProfileImage from "./ProfileImage";
 import TimeStamp from "./TimeStamp";
 import User from "./User";
+import Message from "./Message";
+import Action from './Action';
 
 function Tweet(prop) {
 
@@ -22,9 +24,8 @@ function Tweet(prop) {
           
           <TimeStamp time = {prop.tweet.timestamp}/>
         </div>
-        <div className="tweet_message">
-          <p>{message}</p>
-          </div>
+        
+        <Message message = {prop.tweet.message}/>
 
         <div className="tweet_actions">
           {/* Font Awesome icons */}
@@ -33,6 +34,7 @@ function Tweet(prop) {
           <i className="far fa-heart"></i>
           <i className="fas fa-share"></i>
         </div>
+        <Action />
       </div>
 
       <i className="fas fa-ellipsis-h"></i>
