@@ -27,13 +27,7 @@ function Tweet(prop) {
         
         <Message message = {prop.tweet.message}/>
 
-        <div className="tweet_actions">
-          {/* Font Awesome icons */}
-          <i className="far fa-comment"></i>
-          <i className="fas fa-retweet"></i>
-          <i className="far fa-heart"></i>
-          <i className="fas fa-share"></i>
-        </div>
+        
         <Action />
       </div>
 
